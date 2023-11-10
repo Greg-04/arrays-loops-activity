@@ -31,11 +31,15 @@ while (index < 4){
  * 4. Output the array and number of times teal was found
  */
 
-let arrayColors = ('red','blue','green','teal');
+let arrayColors = ['red', 'blue', 'green', 'teal'];
+let tealCount = 0;
 
-for (let tealCount of arrayColors) {
-     console.log(arrayColors[tealCount]);
-}
+for (let allColors of arrayColors) {
+    console.log(allColors);
+    if (allColors === 'teal') {
+        tealCount += 1;
+    }
+} console.log("Teal was found", tealCount, "times");
 
 // Example output
 // green, red, teal, orange, teal
@@ -51,6 +55,14 @@ for (let tealCount of arrayColors) {
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+
+arrayNumbers = [1, 2, 3, 4, 5, 6];
+let oddNumbers;
+let evenNumbers;
+
+for (let allNumbers of arrayNumbers) {
+
+}
 
 
 // Example output
